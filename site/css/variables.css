@@ -1,0 +1,21 @@
+:root {
+  --ink: #211a16;
+  --muted: #6f6259;
+  --coffee: #3b241a;
+  --coffee-2: #2a1913;
+  --leather: #7b4a2d;
+  --amber: #d79b45;
+  --amber-dark: #a9641f;
+  --steel: #607d8b;
+  --sage: #8c9a78;
+  --paper: #f6efe3;
+  --cream: #fff8ed;
+  --line: rgba(59, 36, 26, 0.16);
+  --shadow: 0 24px 70px rgba(33, 26, 22, 0.16);
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 30px;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Source Sans 3', 'Segoe UI', sans-serif;
+  --max-width: 1180px;
+}

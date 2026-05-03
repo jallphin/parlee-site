@@ -1,0 +1,14 @@
+{
+  "name": "parlee-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static website for Robert Parlee, built for local demos and GitHub Pages deployment.",
+  "scripts": {
+    "start": "python3 -m http.server 8080 --directory site",
+    "dev": "python3 -m http.server 8080 --directory site",
+    "check:links": "node scripts/check-links.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
