@@ -17,3 +17,24 @@ for (const form of document.querySelectorAll('[data-demo-form]')) {
     }
   });
 }
+
+const timelines = document.querySelectorAll('[data-timeline]');
+
+for (const timeline of timelines) {
+  const tabs = [...timeline.querySelectorAll('[data-timeline-target]')];
+  const panels = [...timeline.querySelectorAll('[data-timeline-panel]')];
+
+  for (const tab of tabs) {
+    tab.addEventListener('click', () => {
+      const target = tab.dataset.timelineTarget;
+      for (const item of tabs) {
+        const active = item === tab;
+        item.classList.toggle('active', active);
+        item.setAttribute('aria-selected', String(active));
+      }
+      for (const panel of panels) {
+        panel.classList.toggle('active', panel.dataset.timelinePanel === target);
+      }
+    });
+  }
+}
