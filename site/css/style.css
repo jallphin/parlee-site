@@ -62,7 +62,7 @@ h3 { font-size: clamp(1.45rem, 3vw, 2.25rem); }
 .hero-title .accent { color: var(--leather); }
 .hero-card { position: relative; min-height: 520px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); background: linear-gradient(145deg, rgba(59,36,26,.92), rgba(123,74,45,.78)), url(''); isolation: isolate; animation: rise .75s ease .12s both; }
 .hero-card::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 20%, rgba(215,155,69,.46), transparent 22rem), linear-gradient(165deg, transparent 0 42%, rgba(33,26,22,.58) 43%); }
-.hero-card::after { content: 'Photo placeholder'; position: absolute; inset: 1.2rem; border: 1px solid rgba(255,248,237,.38); border-radius: 22px; display: grid; place-items: center; color: rgba(255,248,237,.82); font-weight: 800; letter-spacing: .18em; text-transform: uppercase; font-size: .8rem; }
+.hero-card::after { content: 'Image panel'; position: absolute; inset: 1.2rem; border: 1px solid rgba(255,248,237,.38); border-radius: 22px; display: grid; place-items: center; color: rgba(255,248,237,.82); font-weight: 800; letter-spacing: .18em; text-transform: uppercase; font-size: .8rem; }
 .hero-note { position: absolute; left: 1.5rem; right: 1.5rem; bottom: 1.5rem; z-index: 2; padding: 1rem; border-radius: 18px; background: rgba(255,248,237,.9); color: var(--coffee); font-weight: 700; }
 .actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.6rem; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: .4rem; min-height: 48px; padding: .72rem 1.05rem; border-radius: 999px; border: 1px solid var(--coffee); background: var(--coffee); color: var(--cream); text-decoration: none; font-weight: 800; line-height: 1.1; cursor: pointer; }
@@ -131,8 +131,8 @@ textarea { min-height: 140px; resize: vertical; }
 .icon-link-grid { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1rem; }
 .icon-link { display: inline-flex; align-items: center; gap: .5rem; padding: .62rem .82rem; border-radius: 999px; border: 1px solid var(--line); background: rgba(255,248,237,.74); color: var(--coffee); text-decoration: none; font-weight: 900; }
 .icon-link:hover { background: var(--coffee); color: var(--cream); }
-.icon-link.pending { opacity: .68; cursor: not-allowed; }
-.icon-link.pending:hover { background: rgba(255,248,237,.74); color: var(--coffee); }
+.icon-link.muted-link { opacity: .68; cursor: not-allowed; }
+.icon-link.muted-link:hover { background: rgba(255,248,237,.74); color: var(--coffee); }
 .icon-card-title { display: inline-flex; align-items: center; gap: .55rem; }
 .section-heading { margin-bottom: 1.4rem; }
 .about-pullquote { align-self: stretch; display: grid; align-content: end; min-height: 340px; }
@@ -176,3 +176,18 @@ textarea { min-height: 140px; resize: vertical; }
 .album-cover { width: 100%; border-radius: 20px; box-shadow: var(--shadow); background: var(--coffee); }
 .video-embed { width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 18px; background: var(--coffee); }
 .video-link-grid .card { overflow: hidden; }
+.hero-logo { margin-bottom: 1.2rem; }
+.album-feature-card { display: grid; grid-template-columns: 160px 1fr; gap: 1.4rem; align-items: center; }
+.album-cover.small { max-width: 160px; box-shadow: 0 18px 48px rgba(0,0,0,.22); }
+.photo-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.photo-strip img { width: 100%; height: clamp(260px, 32vw, 460px); object-fit: cover; border-radius: var(--radius-md); box-shadow: var(--shadow); }
+.muted-link { opacity: .64; cursor: default; }
+.muted-link:hover { background: rgba(255,248,237,.74); color: var(--coffee); }
+.cta-card { display: grid; gap: 1rem; align-items: start; }
+.footer-links a { display: inline-flex; align-items: center; gap: .4rem; }
+.hero-card::after { content: 'Image panel'; position: absolute; inset: 1.2rem; border: 1px solid rgba(255,248,237,.38); border-radius: 22px; display: grid; place-items: center; color: rgba(255,248,237,.82); font-weight: 800; letter-spacing: .18em; text-transform: uppercase; font-size: .8rem; }
+@media (max-width: 860px) {
+  .album-feature-card, .photo-strip { grid-template-columns: 1fr; }
+  .album-cover.small { max-width: 220px; }
+}
+.hero-card.has-photo::after { content: none; }

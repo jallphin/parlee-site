@@ -4,13 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Robert Parlee | Singer, Songwriter & Musician</title>
-  <meta name="description" content="Official website for Robert Parlee, singer-songwriter from Adin, California with major-label rock roots and warm Americana storytelling.">
+  <meta name="description" content="Official website prototype for Robert Owen Parlee: music, videos, booking, EPK, and career story.">
   <meta property="og:title" content="Robert Parlee | Singer, Songwriter & Musician">
   <meta property="og:description" content="Music, booking, EPK, shows, and career story for Robert Parlee.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jallphin.github.io/parlee-site/">
+  <meta property="og:image" content="img/hero/site.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MusicGroup","name":"Robert Parlee","genre":["Singer-songwriter","Americana","Country rock","Classic rock"],"foundingLocation":{"@type":"Place","name":"Adin, California"},"url":"https://jallphin.github.io/parlee-site/","album":{"@type":"MusicAlbum","name":"Stealing Every Moment"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MusicGroup","name":"Robert Owen Parlee","genre":["Singer-songwriter","Americana","Country rock","Classic rock"],"foundingLocation":{"@type":"Place","name":"Northern California"},"url":"https://jallphin.github.io/parlee-site/","sameAs":["https://www.facebook.com/robertparleemusic","https://www.youtube.com/@robertowenparleemusic2880"],"album":{"@type":"MusicAlbum","name":"Stealing Every Moment"}}</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -27,52 +29,57 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Adin, California</p>
-          <h1 class="hero-title"><span>Road-worn songs.</span><span class="accent">Major-label roots.</span></h1>
-          <p class="lede">Robert Parlee brings a lifetime of rock-and-roll history into direct, personal singer-songwriter performances. From Billboard charting and MTV airplay to intimate Northern California shows, the story is still moving.</p>
-          <div class="actions"><a class="button" href="contact.html#booking">Book Robert</a><a class="button secondary" href="music.html">Listen Now</a></div>
+          <img class="logo-mark hero-logo" src="img/robert-parlee-logo.png" alt="Robert Parlee">
+          <p class="eyebrow">Northern California singer-songwriter</p>
+          <h1 class="hero-title"><span>Major-label history.</span><span class="accent">Mountain-studio songs.</span></h1>
+          <p class="lede">Robert Owen Parlee brings a lifetime of rock-and-roll credits into warm, direct singer-songwriter performances: Billboard chart history, MTV airplay, film credits, and a current body of original songs recorded in Nashville.</p>
+          <div class="actions"><a class="button" href="music.html"><svg class="icon"><use href="icons.svg#icon-music"></use></svg>Listen</a><a class="button secondary" href="video.html"><svg class="icon"><use href="icons.svg#icon-youtube"></use></svg>Watch</a><a class="button secondary" href="contact.html"><svg class="icon"><use href="icons.svg#icon-mail"></use></svg>Book Robert</a></div>
         </div>
-        <div class="hero-card has-photo" style="--hero-image: url('../img/hero/site.jpg')" aria-label="Robert Parlee performance photo"><p class="hero-note">Official Robert Parlee site photography, staged locally for prototype review.</p></div>
+        <div class="hero-card has-photo" style="--hero-image: url('../img/hero/site.jpg')" aria-label="Robert Parlee performance photo"><p class="hero-note">Songs from the road, the studio, and a life spent performing.</p></div>
       </div>
     </section>
     <section class="section-tight">
       <div class="container feature-strip" aria-label="Career highlights">
         <div class="stat"><strong>#110</strong>Billboard Hot 200 history with Isle of Man.</div>
         <div class="stat"><strong>MTV</strong>Airplay for “Desperate Surrender.”</div>
-        <div class="stat"><strong>EPK</strong>Booking-ready press kit and music samples.</div>
+        <div class="stat"><strong>10</strong>Tracks on <em>Stealing Every Moment</em>.</div>
       </div>
     </section>
     <section class="section">
       <div class="container grid grid-2">
-        <article class="card dark">
-          <p class="eyebrow">Latest Release</p>
-          <h2>Stealing Every Moment</h2>
-          <p>A 10-track solo album that should be front-and-center for fans, venues, and press. This prototype keeps the album visible while we gather final artwork and platform links.</p>
-          <div class="actions"><a class="button light" href="music.html">Explore the Album</a></div>
+        <article class="card dark album-feature-card">
+          <img class="album-cover small" src="img/albums/stealing-every-moment.png" alt="Stealing Every Moment album artwork">
+          <div>
+            <p class="eyebrow">Featured Album</p>
+            <h2>Stealing Every Moment</h2>
+            <p>Songs written over multiple decades, recorded in Nashville with producer Travis Allen.</p>
+            <div class="actions"><a class="button light" href="music.html">Explore the Album</a></div>
+          </div>
         </article>
         <article class="card">
-          <p class="eyebrow">Booking CTA</p>
-          <h2>Private events, clubs, and listening rooms.</h2>
-          <p class="muted">The contact path now separates booking inquiries from general messages so venues can send useful details from the start.</p>
-          <div class="actions"><a class="button" href="contact.html#booking">Start a Booking Inquiry</a></div>
+          <p class="eyebrow">For venues and media</p>
+          <h2>One place for Robert’s story, music, video, and booking context.</h2>
+          <p class="muted">The EPK page presents the career proof quickly: major-label releases, film credits, current songs, photos, and public media links.</p>
+          <div class="actions"><a class="button" href="press.html">Open EPK</a></div>
         </article>
       </div>
     </section>
     <section class="section-tight">
       <div class="container grid grid-3">
-        <a class="card" href="press.html"><p class="eyebrow">For Venues</p><h3 class="icon-card-title"><svg class="icon"><use href="icons.svg#icon-download"></use></svg>Electronic Press Kit</h3><p class="muted">Short bio, long bio, highlights, downloads, and booking essentials.</p></a>
-        <a class="card" href="shows.html"><p class="eyebrow">Upcoming</p><h3 class="icon-card-title"><svg class="icon"><use href="icons.svg#icon-calendar"></use></svg>Shows Calendar</h3><p class="muted">Placeholder event structure ready for real dates, venues, and ticket links.</p></a>
-        <a class="card" href="about.html"><p class="eyebrow">Story</p><h3 class="icon-card-title"><svg class="icon"><use href="icons.svg#icon-music"></use></svg>Career Timeline</h3><p class="muted">Pictures in Pasadena, Isle of Man, Lonesome Romeos, and current solo work.</p></a>
+        <a class="card" href="press.html"><p class="eyebrow">For Venues</p><h3 class="icon-card-title"><svg class="icon"><use href="icons.svg#icon-download"></use></svg>Electronic Press Kit</h3><p class="muted">Bio, highlights, press photos, music samples, and booking context.</p></a>
+        <a class="card" href="shows.html"><p class="eyebrow">Live</p><h3 class="icon-card-title"><svg class="icon"><use href="icons.svg#icon-calendar"></use></svg>Shows & Booking</h3><p class="muted">Current show direction and private-event availability.</p></a>
+        <a class="card" href="about.html"><p class="eyebrow">Story</p><h3 class="icon-card-title"><svg class="icon"><use href="icons.svg#icon-music"></use></svg>Career Timeline</h3><p class="muted">Pictures, Isle of Man, Lonesome Romeos, film credits, and solo work.</p></a>
       </div>
     </section>
     <section class="section-tight">
-      <div class="container cta-band">
-        <div><p class="eyebrow">Content Needed</p><h2>Next pass: replace placeholders with Robert’s real assets.</h2><p>Photos, platform links, show dates, and contact emails are tracked in the content checklist.</p></div>
-        <a class="button light" href="press.html">View EPK Page</a>
+      <div class="container photo-strip">
+        <img src="img/gallery/performance-2.jpg" alt="Robert Parlee on stage">
+        <img src="img/gallery/live-2.jpg" alt="Robert Parlee with guitar">
+        <img src="img/gallery/performance-1.jpg" alt="Robert Parlee performance portrait">
       </div>
     </section>
   </main>
-  <footer class="site-footer"><div class="container footer-grid"><div><h3>Robert Parlee</h3><p>Official demo site for music, booking, video, and press.</p></div><div class="footer-links"><strong>Explore</strong><a href="music.html">Music</a><a href="press.html">EPK</a><a href="contact.html">Contact</a></div><div class="footer-links"><strong>Social</strong><a href="https://www.facebook.com/robertparleemusic" target="_blank" rel="noreferrer"><svg class="icon"><use href="icons.svg#icon-facebook"></use></svg> Facebook</a><a href="https://www.youtube.com/@robertowenparleemusic2880" target="_blank" rel="noreferrer"><svg class="icon"><use href="icons.svg#icon-youtube"></use></svg> YouTube</a></div></div></footer>
+  <footer class="site-footer"><div class="container footer-grid"><div><h3>Robert Parlee</h3><p>Music, booking, video, and press information.</p></div><div class="footer-links"><strong>Explore</strong><a href="music.html">Music</a><a href="press.html">EPK</a><a href="contact.html">Contact</a></div><div class="footer-links"><strong>Social</strong><a href="https://www.facebook.com/robertparleemusic" target="_blank" rel="noreferrer"><svg class="icon"><use href="icons.svg#icon-facebook"></use></svg> Facebook</a><a href="https://www.youtube.com/@robertowenparleemusic2880" target="_blank" rel="noreferrer"><svg class="icon"><use href="icons.svg#icon-youtube"></use></svg> YouTube</a></div></div></footer>
   <script src="js/main.js"></script>
 </body>
 </html>
