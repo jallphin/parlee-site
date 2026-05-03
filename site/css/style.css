@@ -191,3 +191,11 @@ textarea { min-height: 140px; resize: vertical; }
   .album-cover.small { max-width: 220px; }
 }
 .hero-card.has-photo::after { content: none; }
+.gallery-mosaic { display: grid; grid-template-columns: 1.2fr .8fr .8fr; gap: 1rem; align-items: stretch; }
+.gallery-mosaic .photo-card { min-height: 260px; }
+.gallery-mosaic .photo-card.featured { grid-row: span 2; }
+.gallery-mosaic .photo-card img { min-height: 100%; }
+@media (max-width: 860px) {
+  .gallery-mosaic { grid-template-columns: 1fr; }
+  .gallery-mosaic .photo-card.featured { grid-row: auto; }
+}
