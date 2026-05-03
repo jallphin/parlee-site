@@ -28,3 +28,31 @@ for (const timeline of timelines) {
     });
   }
 }
+
+const galleries = document.querySelectorAll('[data-gallery]');
+
+for (const gallery of galleries) {
+  const image = gallery.querySelector('[data-gallery-image]');
+  const caption = gallery.querySelector('[data-gallery-caption]');
+  const thumbs = [...gallery.querySelectorAll('[data-gallery-thumb]')];
+  const prev = gallery.querySelector('[data-gallery-prev]');
+  const next = gallery.querySelector('[data-gallery-next]');
+  let current = Math.max(0, thumbs.findIndex(thumb => thumb.classList.contains('active')));
+
+  const show = index => {
+    current = (index + thumbs.length) % thumbs.length;
+    const thumb = thumbs[current];
+    image.src = thumb.dataset.src;
+    image.alt = thumb.dataset.alt;
+    caption.textContent = thumb.dataset.caption;
+    for (const item of thumbs) {
+      const active = item === thumb;
+      item.classList.toggle('active', active);
+      item.setAttribute('aria-selected', String(active));
+    }
+  };
+
+  prev?.addEventListener('click', () => show(current - 1));
+  next?.addEventListener('click', () => show(current + 1));
+  thumbs.forEach((thumb, index) => thumb.addEventListener('click', () => show(index)));
+}

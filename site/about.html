@@ -53,13 +53,21 @@
         <p class="eyebrow">Photo Gallery</p>
         <h2>Robert on stage and in the moment.</h2>
         <p class="lede">A small visual snapshot of Robert as a performer, songwriter, and working musician.</p>
-        <div class="gallery-mosaic">
-          <figure class="card photo-card featured"><img src="img/gallery/performance-1.jpg" alt="Robert Parlee performing live"><figcaption>Live performance</figcaption></figure>
-          <figure class="card photo-card"><img src="img/gallery/performance-2.jpg" alt="Robert Parlee on stage"><figcaption>On stage</figcaption></figure>
-          <figure class="card photo-card"><img src="img/gallery/live-2.jpg" alt="Robert Parlee with guitar"><figcaption>Songwriter portrait</figcaption></figure>
-          <figure class="card photo-card"><img src="img/gallery/live-3.jpg" alt="Robert Parlee musician portrait"><figcaption>Behind the songs</figcaption></figure>
-          <figure class="card photo-card"><img src="img/gallery/live-4.jpg" alt="Robert Parlee performance image"><figcaption>Performance moment</figcaption></figure>
-        </div>
+        <section class="photo-carousel" data-gallery aria-label="Robert Parlee photo gallery">
+          <button class="gallery-control prev" type="button" data-gallery-prev aria-label="Previous photo"><span aria-hidden="true">‹</span></button>
+          <figure class="gallery-frame">
+            <img data-gallery-image src="img/gallery/performance-1.jpg" alt="Robert Parlee performing live">
+            <figcaption data-gallery-caption>Live performance</figcaption>
+          </figure>
+          <button class="gallery-control next" type="button" data-gallery-next aria-label="Next photo"><span aria-hidden="true">›</span></button>
+          <div class="gallery-thumbs" role="tablist" aria-label="Choose gallery photo">
+            <button class="gallery-thumb active" type="button" data-gallery-thumb data-src="img/gallery/performance-1.jpg" data-alt="Robert Parlee performing live" data-caption="Live performance" aria-label="Show live performance photo" aria-selected="true"><img src="img/gallery/performance-1.jpg" alt=""></button>
+            <button class="gallery-thumb" type="button" data-gallery-thumb data-src="img/gallery/performance-2.jpg" data-alt="Robert Parlee on stage" data-caption="On stage" aria-label="Show stage photo" aria-selected="false"><img src="img/gallery/performance-2.jpg" alt=""></button>
+            <button class="gallery-thumb" type="button" data-gallery-thumb data-src="img/gallery/live-2.jpg" data-alt="Robert Parlee with guitar" data-caption="Songwriter portrait" aria-label="Show songwriter portrait" aria-selected="false"><img src="img/gallery/live-2.jpg" alt=""></button>
+            <button class="gallery-thumb" type="button" data-gallery-thumb data-src="img/gallery/live-3.jpg" data-alt="Robert Parlee musician portrait" data-caption="Behind the songs" aria-label="Show musician portrait" aria-selected="false"><img src="img/gallery/live-3.jpg" alt=""></button>
+            <button class="gallery-thumb" type="button" data-gallery-thumb data-src="img/gallery/live-4.jpg" data-alt="Robert Parlee performance image" data-caption="Performance moment" aria-label="Show performance moment" aria-selected="false"><img src="img/gallery/live-4.jpg" alt=""></button>
+          </div>
+        </section>
       </div>
     </section>
 
